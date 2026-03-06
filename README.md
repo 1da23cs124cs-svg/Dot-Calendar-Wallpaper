@@ -95,3 +95,7 @@ Feel free to open issues or submit pull requests to improve the project.
 ⭐ Support
 
 If you like this project, consider starring the repository on **GitHub ⭐
+
+📥 Download App
+
+Download the latest APK from the Releases section.
