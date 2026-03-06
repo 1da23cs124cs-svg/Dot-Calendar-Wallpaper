@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: black;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* align from top for spacing */
+  padding: 3cm 1cm 1.5cm 1cm; /* top, right, bottom, left */
+}
+
+/* Phone container */
+.phone {
+  width: 100%;            /* width adapts to available space */
+  max-width: 280px;       /* max width for smaller phones */
+  height: 100%;           /* full height inside body padding */
+  max-height: calc(100vh - 4.5cm); /* 3cm top + 1.5cm bottom */
+  background: black;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically */
+}
+
+/* DOTS GRID */
+.dots {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 8px;
+  justify-items: center;
+  align-content: center; /* center dots vertically inside available space */
+  width: 100%;
+  height: 100%;
+}
+
+/* DOT STYLE */
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #aaa;
+}
+
+.past {
+  background: #ff3b3b;
+}
+
+.dot.present {
+  background-color: maroon;
+}
